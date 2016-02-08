@@ -18,7 +18,7 @@ Calculate the total number of steps taken by each day `DailyTotalSteps` and crea
     DailyTotalSteps <- aggregate(steps ~ date, activity, sum)
     hist(DailyTotalSteps$steps, xlab = "Number of Steps", main = "Total number of steps taken per day", col = "red")
 
-![MeanTotalSteps](/[MeanTotalSteps.png)
+![MeanTotalSteps](/MeanTotalSteps.png)
 
 Calulate the mean and median of total number of steps taken by each day. 
 
@@ -61,7 +61,7 @@ Create a histogram for total number of steps taken by each day using the new dat
     DailyTotalStepsXNa <- aggregate(steps ~ date, activityXNa, sum)
     hist(DailyTotalStepsXNa$steps, xlab = "Number of Steps", main = "Total number of steps taken per day", col = "red")
     
-![MeanTotalStepsXNa](/[MeanTotalStepsXNa.png)
+![MeanTotalStepsXNa](/MeanTotalStepsXNa.png)
 
 Calclate new mean `MeanTotalStepsXNa` and new median `MedianTotalStepsXNa` for the new dataset with imputed missing values. Both mean and median is 10766.19. Compared to the original dataset with missing values, the means are same but the median is higher.
 
